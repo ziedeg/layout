@@ -11,25 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    struct Course: Decodable {
-        let id: Int
-        let name: String
-        let link: String
-        let imageUrl: String
-        
-        //constructor
-        init (json: [String: Any]){
-            id = json["id"] as? Int ?? -1
-            name = json["name"] as? String ?? ""
-            link = json["link"] as? String ?? ""
-            imageUrl = json["imageUrl"] as? String ?? ""
-        }
-    }
+    
+  
     
     @IBOutlet weak var sensor1Temp: UITextField!
     
     
-    @IBAction func getData(_ sender: Any) {
+   /* @IBAction func getData(_ sender: Any) {
         
         let jsonUrlString = "https://api.letsbuildthatapp.com/jsondecodable/course"
               
@@ -56,10 +44,8 @@ class ViewController: UIViewController {
                    
                    
                }.resume() //start the url session
-               
-               
-               
-           }
+
+           }*/
     
     
     override func viewDidLoad() {
@@ -67,6 +53,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
  
+    
+    @IBAction func settingsButton(_ sender: Any) {
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
     }
     
     

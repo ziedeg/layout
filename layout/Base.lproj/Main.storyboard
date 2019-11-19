@@ -143,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9o-6d-qjp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4060" y="90.404797601199405"/>
+            <point key="canvasLocation" x="3929" y="113"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SgJ-Yc-5AM">
@@ -176,22 +176,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature (F)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2T-4m-Jrl">
-                                <rect key="frame" x="34" y="294" width="152" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Humidity (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfr-ET-jp3">
-                                <rect key="frame" x="34" y="347" width="152" height="18"/>
+                                <rect key="frame" x="31" y="340" width="152" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Air Quality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeK-Za-vFY">
-                                <rect key="frame" x="34" y="400" width="132" height="18"/>
+                                <rect key="frame" x="34" y="394" width="132" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -202,6 +195,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tempField:" destination="Eiq-RJ-f7R" eventType="editingDidEnd" id="AMg-Jq-ARU"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get instat notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1M-eM-Tda">
                                 <rect key="frame" x="108" y="133" width="210" height="26"/>
@@ -211,7 +207,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x57-ok-2Fv">
-                                <rect key="frame" x="28" y="487" width="55" height="24"/>
+                                <rect key="frame" x="28" y="487" width="82" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -228,6 +224,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature (F)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2T-4m-Jrl">
+                                <rect key="frame" x="28" y="290" width="152" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94835036989999999" green="0.94508892300000003" blue="0.94132494929999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ol7-Du-e3o"/>
@@ -235,6 +238,7 @@
                     <navigationItem key="navigationItem" id="iyu-6W-ZmS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAA-dH-TqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Eiq-RJ-f7R" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2789.8550724637685" y="892.63392857142856"/>
         </scene>
@@ -315,6 +319,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
+                                    <action selector="settingsButton:" destination="5nb-xt-CNP" eventType="touchUpInside" id="05H-6N-9Pw"/>
                                     <segue destination="dpk-62-e5J" kind="show" id="5Aj-st-qMO"/>
                                 </connections>
                             </button>
@@ -325,6 +330,7 @@
                     <navigationItem key="navigationItem" id="iri-T2-7EH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed5-iJ-qvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5nb-xt-CNP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2791.1999999999998" y="112.89355322338831"/>
         </scene>
