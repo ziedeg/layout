@@ -29,6 +29,10 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var setTemp: UITextField!
     @IBOutlet weak var setHum: UITextField!
     @IBOutlet weak var setAir: UITextField!
+    @IBOutlet weak var setEmail: UITextField!
+    @IBOutlet weak var `switch`: UISwitch!
+    
+    
     
    // var configItems:NSMutableArray = []
     override func viewDidLoad() {
@@ -53,14 +57,20 @@ class SettingsViewController: UIViewController {
                do{
                        
                       let whatever = try JSONDecoder().decode(Whatever.self, from: data)
+                print(whatever)
                 let temp = whatever.Items[0].TemperatureThreshold
                 let hum = whatever.Items[0].HumidityThreshold
                 let airQ = whatever.Items[0].AirQualityThreshold
+                let email = whatever.Items[0].Email
+                let notification = whatever.Items[0].NotificationsEnabled
                 
                 self.setTemp.text = String(temp)
                 self.setHum.text = String(hum)
                 self.setAir.text = String(airQ)
-              
+                self.setEmail.text = email
+                self.switch.isOn = notification
+               
+                
                        }catch let jsonErr{
                            print("error serializing json:", jsonErr)
                            }

@@ -158,7 +158,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Threshold Values:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8j-xM-ZYX">
-                                <rect key="frame" x="31" y="239" width="158" height="24"/>
+                                <rect key="frame" x="31" y="239" width="214" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -238,8 +238,10 @@
                     <navigationItem key="navigationItem" id="iyu-6W-ZmS"/>
                     <connections>
                         <outlet property="setAir" destination="0Kf-iA-EIY" id="67z-gj-NCF"/>
+                        <outlet property="setEmail" destination="Gsn-in-fw1" id="SP0-PB-3qp"/>
                         <outlet property="setHum" destination="ZTO-DB-Guq" id="d6r-zC-gyA"/>
                         <outlet property="setTemp" destination="86I-4r-3c5" id="gfq-wI-VUE"/>
+                        <outlet property="switch" destination="L8m-S4-4PL" id="s2x-CD-xmR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAA-dH-TqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
