@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="3929" y="113"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="SgJ-Yc-5AM">
             <objects>
-                <viewController id="dpk-62-e5J" sceneMemberID="viewController">
+                <viewController id="dpk-62-e5J" customClass="SettingsViewController" customModule="layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lcw-he-zHd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,6 +236,11 @@
                         <viewLayoutGuide key="safeArea" id="ol7-Du-e3o"/>
                     </view>
                     <navigationItem key="navigationItem" id="iyu-6W-ZmS"/>
+                    <connections>
+                        <outlet property="setAir" destination="0Kf-iA-EIY" id="67z-gj-NCF"/>
+                        <outlet property="setHum" destination="ZTO-DB-Guq" id="d6r-zC-gyA"/>
+                        <outlet property="setTemp" destination="86I-4r-3c5" id="gfq-wI-VUE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAA-dH-TqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Eiq-RJ-f7R" userLabel="Exit" sceneMemberID="exit"/>
